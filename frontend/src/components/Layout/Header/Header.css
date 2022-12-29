@@ -1,0 +1,29 @@
+header,
+header nav,
+header nav ul {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+header {
+	width: 100vw;
+	height: 4rem;
+	min-height: max-content;
+	padding: 4rem 10%;
+}
+
+header nav {
+	flex: 1;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+}
+
+header nav ul {
+	justify-content: center;
+}
+
+header nav ul li,
+header nav div button {
+	margin-right: 1rem;
+}
