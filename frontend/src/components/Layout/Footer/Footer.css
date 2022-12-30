@@ -1,0 +1,21 @@
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10%;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+	padding: 0 10%;
+}
+
+.socials ul {
+	display: flex;
+}
+
+.socials ul > * {
+	margin-left: 0.5rem;
+}

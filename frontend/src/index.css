@@ -23,6 +23,12 @@
 	padding: 0;
 }
 
+#root {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
 a {
 	font-weight: 500;
 	color: #646cff;

@@ -1,0 +1,9 @@
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.hero-text button {
+	width: 40%;
+}

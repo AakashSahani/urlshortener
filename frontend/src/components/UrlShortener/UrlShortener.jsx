@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './UrlShortener.css';
 
 function UrlShortener() {
 	const [url, setUrl] = useState('');
@@ -30,9 +31,10 @@ function UrlShortener() {
 					name="longlink"
 					id="longlink"
 					onChange={handleChange}
+					placeholder="Shorten a link here..."
 					value={url}
 				/>
-				<button type="submit">Submit Link!</button>
+				<button type="submit">Shorten It!</button>
 			</form>
 			{result != '' && <a href={result}>{result}</a>}
 		</>
