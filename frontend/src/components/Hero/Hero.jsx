@@ -1,11 +1,10 @@
 import React from 'react';
 import './Hero.css';
-import Card from '../Layout/Card/Card';
 import Working from '../../assets/illustration-working.svg';
 
 function Hero() {
 	return (
-		<Card>
+		<section>
 			<div className="hero-text">
 				<h1>More than just shorter links</h1>
 				<p>
@@ -17,7 +16,7 @@ function Hero() {
 			<div className="hero-img">
 				<img src={Working} alt="Illustration of a working person" />
 			</div>
-		</Card>
+		</section>
 	);
 }
 

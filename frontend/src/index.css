@@ -29,6 +29,11 @@
 	overflow-x: hidden;
 }
 
+section {
+	display: flex;
+	padding: 0 10%;
+}
+
 a {
 	font-weight: 500;
 	color: #646cff;
