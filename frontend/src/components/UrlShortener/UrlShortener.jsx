@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './UrlShortener.css';
 
 function UrlShortener() {
 	const [url, setUrl] = useState('');
-	const [result, setResult] = useState('');
+	const [result, setResult] = useState([]);
 
 	const handleChange = (e) => {
 		setUrl(e.currentTarget.value);
@@ -11,7 +12,6 @@ function UrlShortener() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(url);
 		shortenUrl(url);
 		setUrl((u) => '');
 	};
@@ -20,7 +20,18 @@ function UrlShortener() {
 		const data = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
 			.then((res) => res.json())
 			.then((data) => data);
-		setResult(data.result.full_short_link);
+		setResult([
+			...result,
+			{ id: uuidv4(), url: url, shortlink: data.result.full_short_link },
+		]);
+	};
+
+	const copyContent = async (text) => {
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch (error) {
+			console.log('Failed to Copy: ', error);
+		}
 	};
 
 	return (
@@ -36,7 +47,23 @@ function UrlShortener() {
 				/>
 				<button type="submit">Shorten It!</button>
 			</form>
-			{result != '' && <a href={result}>{result}</a>}
+			<ul className="result">
+				{result.length > 0 ? (
+					result.map((res) => (
+						<li key={res.id}>
+							<a href={res.url} target="_blank" rel="noopener noreferrer">
+								{res.url}
+							</a>
+							<a href={res.shortlink} target="_blank" rel="noopener noreferrer">
+								{res.shortlink}
+							</a>
+							<button onClick={copyContent(res.shortlink)}>Copy!</button>
+						</li>
+					))
+				) : (
+					<></>
+				)}
+			</ul>
 		</>
 	);
 }
