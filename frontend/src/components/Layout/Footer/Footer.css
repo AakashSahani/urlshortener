@@ -1,8 +1,9 @@
 footer {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 10%;
+	padding: 5% 10%;
+	background-color: var(--VeryDarkViolet);
+	color: var(--white);
 }
 
 .menu {
@@ -12,10 +13,17 @@ footer {
 	padding: 0 10%;
 }
 
+footer li {
+	margin-top: 0.5rem;
+}
 .socials ul {
 	display: flex;
 }
 
 .socials ul > * {
-	margin-left: 0.5rem;
+	margin-left: 1rem;
+}
+
+footer a:hover {
+	color: var(--Cyan);
 }

@@ -9,11 +9,11 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main>
+			<>
 				<Hero />
 				<UrlShortener />
 				<Features />
-			</main>
+			</>
 			<Footer />
 		</>
 	);

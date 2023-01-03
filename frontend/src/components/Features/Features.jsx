@@ -17,7 +17,9 @@ function Features() {
 			<ul>
 				<li>
 					<div className="feature">
-						<img src={BrandRecognition} alt="Brand recognition" />
+						<div className="img">
+							<img src={BrandRecognition} alt="Brand recognition" />
+						</div>
 						<h2>Brand Recognition</h2>
 						<p>
 							Boost your brand recognition with each click. Generic links don't
@@ -28,7 +30,9 @@ function Features() {
 				</li>
 				<li>
 					<div className="feature">
-						<img src={DetailedRecords} alt="Detailed Records" />
+						<div className="img">
+							<img src={DetailedRecords} alt="Detailed Records" />
+						</div>
 						<h2>Detailed Records</h2>
 						<p>
 							Boost your brand recognition with each click. Generic links don't
@@ -39,7 +43,9 @@ function Features() {
 				</li>
 				<li>
 					<div className="feature">
-						<img src={FullyCustomizable} alt="Fully Customizable" />
+						<div className="img">
+							<img src={FullyCustomizable} alt="Fully Customizable" />
+						</div>
 						<h2>Fully Customizable</h2>
 						<p>
 							Boost your brand recognition with each click. Generic links don't

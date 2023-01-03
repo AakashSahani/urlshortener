@@ -4,7 +4,7 @@ import Working from '../../assets/illustration-working.svg';
 
 function Hero() {
 	return (
-		<section>
+		<section className="hero">
 			<div className="hero-text">
 				<h1>More than just shorter links</h1>
 				<p>

@@ -5,6 +5,7 @@ import './UrlShortener.css';
 function UrlShortener() {
 	const [url, setUrl] = useState('');
 	const [result, setResult] = useState([]);
+	const [copied, setCopied] = useState('Copy!');
 
 	const handleChange = (e) => {
 		setUrl(e.currentTarget.value);
@@ -35,7 +36,7 @@ function UrlShortener() {
 	};
 
 	return (
-		<>
+		<main>
 			<form onSubmit={handleSubmit}>
 				<input
 					type="url"
@@ -54,17 +55,25 @@ function UrlShortener() {
 							<a href={res.url} target="_blank" rel="noopener noreferrer">
 								{res.url}
 							</a>
-							<a href={res.shortlink} target="_blank" rel="noopener noreferrer">
-								{res.shortlink}
-							</a>
-							<button onClick={copyContent(res.shortlink)}>Copy!</button>
+							<div>
+								<a
+									href={res.shortlink}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{res.shortlink}
+								</a>
+								<button onClick={() => copyContent(res.shortlink)}>
+									{copied}
+								</button>
+							</div>
 						</li>
 					))
 				) : (
 					<></>
 				)}
 			</ul>
-		</>
+		</main>
 	);
 }
 

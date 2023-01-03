@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<footer>
 			<div className="logo">
-				<img src={logo} alt="Logo" />
+				<h2>Shortly</h2>
 			</div>
 			<div className="menu">
 				<div>
