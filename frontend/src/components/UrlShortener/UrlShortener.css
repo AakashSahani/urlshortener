@@ -13,7 +13,6 @@ form {
 	margin: 0 auto;
 	transform: translateY(-50%);
 	padding: 0 10%;
-	/* border: 1px solid black; */
 	border-radius: 0.5rem;
 	background: url('../../assets/bg-shorten-desktop.svg');
 	background-repeat: no-repeat;
@@ -45,20 +44,27 @@ form button {
 	min-height: 6rem;
 	width: 80vw;
 	margin: 4rem auto;
-	padding: 0 10%;
 }
 
 .result li {
-	border: 1px solid white;
+	border-radius: 0.5rem;
+	background-color: var(--white);
 	margin: 0.5rem auto;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-align: left;
-	padding: 0.5rem 1rem;
+	padding: 1rem;
 }
 
+.result li > a {
+	color: var(--black);
+}
+
+.result li div a {
+	color: var(--Cyan);
+}
 .result li button {
 	margin-left: 0.5rem;
 }
