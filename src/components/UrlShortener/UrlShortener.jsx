@@ -38,7 +38,7 @@ function UrlShortener() {
 		<main className="flex flex-col items-center w-screen min-h-fit pb-20">
 			<form
 				onSubmit={handleSubmit}
-				className="flex flex-col justify-evenly items-center w-10/12 h-40 p-5 bg-bgShortenMobile bg-no-repeat bg-right-top bg-auto bg-darkViolet rounded-2xl"
+				className="flex flex-col justify-evenly items-center w-10/12 h-40 p-5 bg-bgShortenMobile sm:bg-bgShortenDesktop bg-no-repeat bg-right-top bg-auto bg-darkViolet rounded-2xl"
 			>
 				<input
 					type="url"

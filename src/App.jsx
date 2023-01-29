@@ -13,7 +13,7 @@ function App() {
 				<UrlShortener />
 				<Features />
 			</>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

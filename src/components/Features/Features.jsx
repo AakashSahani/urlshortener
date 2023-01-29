@@ -5,15 +5,15 @@ import FullyCustomizable from '../../assets/icon-fully-customizable.svg';
 
 function Features() {
 	return (
-		<section className="min-h-fit p-5 flex flex-col text-center bg-gray-100 space-y-5">
-			<div className="text px-3 space-y-4 my-10">
+		<section className="min-h-fit pt-5 flex flex-col text-center bg-gray-100 space-y-5">
+			<div className="text px-8 space-y-4 my-10">
 				<h2 className="text-3xl font-bold">Advanced Statistics</h2>
 				<p className="text-lg font-bold">
 					Track how your links are performing across the web with our advanced
 					statistics dashboard.
 				</p>
 			</div>
-			<ul className="w-full h-fit py-10 space-y-20">
+			<ul className="w-full h-fit px-5 py-10 space-y-20">
 				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
 						<img src={BrandRecognition} alt="Brand recognition" />
@@ -45,6 +45,14 @@ function Features() {
 					</p>
 				</li>
 			</ul>
+			<div className="bg-darkViolet bg-bgBoostMobile sm:bg-bgBoostDesktop bg-no-repeat bg-cover h-72 flex flex-col items-center justify-center space-y-5">
+				<h3 className="text-3xl text-white font-bold">
+					Boost your links today
+				</h3>
+				<button className="bg-mainCyan rounded-full min-w-fit w-1/2 h-12 text-white font-bold text-lg mx-auto">
+					Get Started
+				</button>
+			</div>
 		</section>
 	);
 }
