@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Layout/Header/Header';
 import Hero from './components/Hero/Hero';
 import UrlShortener from './components/UrlShortener/UrlShortener';
@@ -12,9 +11,9 @@ function App() {
 			<>
 				<Hero />
 				<UrlShortener />
-				<Features />
+				{/* <Features /> */}
 			</>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }
