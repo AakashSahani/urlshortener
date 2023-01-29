@@ -35,7 +35,7 @@ function UrlShortener() {
 	};
 
 	return (
-		<main className="flex flex-col items-center w-screen h-screen min-h-fit">
+		<main className="flex flex-col items-center w-screen min-h-fit pb-20">
 			<form
 				onSubmit={handleSubmit}
 				className="flex flex-col justify-evenly items-center w-10/12 h-40 p-5 bg-bgShortenMobile bg-no-repeat bg-right-top bg-auto bg-darkViolet rounded-2xl"
@@ -61,7 +61,7 @@ function UrlShortener() {
 					result.map((res) => (
 						<li
 							key={res.id}
-							className="flex flex-col w-10/12 h-40 rounded-2xl justify-center border shadow"
+							className="flex flex-col w-10/12 h-40 my-3 rounded-2xl justify-center border shadow"
 						>
 							<a
 								href={res.url}

@@ -11,7 +11,7 @@ function App() {
 			<>
 				<Hero />
 				<UrlShortener />
-				{/* <Features /> */}
+				<Features />
 			</>
 			{/* <Footer /> */}
 		</>
