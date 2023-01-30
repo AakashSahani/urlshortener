@@ -6,15 +6,15 @@ import FullyCustomizable from '../../assets/icon-fully-customizable.svg';
 function Features() {
 	return (
 		<section className="min-h-fit pt-5 flex flex-col text-center bg-gray-100 space-y-5">
-			<div className="text px-8 space-y-4 my-10">
+			<div className="text px-8 space-y-4 my-10 sm:w-1/2 sm:mx-auto sm:px-[10%]">
 				<h2 className="text-3xl font-bold">Advanced Statistics</h2>
-				<p className="text-lg font-bold">
+				<p className="text-lg text-gray-500">
 					Track how your links are performing across the web with our advanced
 					statistics dashboard.
 				</p>
 			</div>
-			<ul className="w-full h-fit px-5 py-10 space-y-20">
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60">
+			<ul className="w-full h-fit sm:flex sm:items-center sm:justify-center sm:space-x-10 px-5 sm:px-[10%] py-10 sm:py-20 space-y-20 sm:space-y-0 sm:mb-20">
+				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72 sm:-translate-y-10">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
 						<img src={BrandRecognition} alt="Brand recognition" />
 					</div>
@@ -24,7 +24,7 @@ function Features() {
 						mean a thing. Branded links help instil confidence in your content.
 					</p>
 				</li>
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60">
+				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
 						<img src={DetailedRecords} alt="Detailed Records" />
 					</div>
@@ -34,7 +34,7 @@ function Features() {
 						where people engage with your content helps inform better decisions.
 					</p>
 				</li>
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60">
+				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72 sm:translate-y-10">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
 						<img src={FullyCustomizable} alt="Fully Customizable" />
 					</div>
@@ -49,7 +49,7 @@ function Features() {
 				<h3 className="text-3xl text-white font-bold">
 					Boost your links today
 				</h3>
-				<button className="bg-mainCyan rounded-full min-w-fit w-1/2 h-12 text-white font-bold text-lg mx-auto">
+				<button className="bg-mainCyan rounded-full min-w-fit w-1/2 sm:w-40 h-12 text-white font-bold text-lg mx-auto">
 					Get Started
 				</button>
 			</div>
