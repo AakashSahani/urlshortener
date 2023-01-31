@@ -6,40 +6,40 @@ import FullyCustomizable from '../../assets/icon-fully-customizable.svg';
 function Features() {
 	return (
 		<section className="min-h-fit pt-5 flex flex-col text-center bg-gray-100 space-y-5">
-			<div className="text px-8 space-y-4 my-10 sm:w-1/2 sm:mx-auto sm:px-[10%]">
+			<div className="text px-8 space-y-4 my-10 lg:w-1/2 sm:mx-auto sm:px-[10%]">
 				<h2 className="text-3xl font-bold">Advanced Statistics</h2>
 				<p className="text-lg text-gray-500">
 					Track how your links are performing across the web with our advanced
 					statistics dashboard.
 				</p>
 			</div>
-			<ul className="w-full h-fit sm:flex sm:items-center sm:justify-center sm:space-x-10 px-5 sm:px-[10%] py-10 sm:py-20 space-y-20 sm:space-y-0 sm:mb-20">
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72 sm:-translate-y-10">
+			<ul className="flex flex-col lg:flex-row lg:h-fit justify-evenly items-center p-[10%] lg:space-x-10 space-y-20 lg:space-y-0 border-black">
+				<li className="w-11/12 sm:w-96 sm:max-w-96 h-80 bg-white border rounded-md shadow-md flex flex-col items-center px-5 pb-5 lg:-translate-y-10">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
 						<img src={BrandRecognition} alt="Brand recognition" />
 					</div>
 					<h2 className="font-bold text-2xl">Brand Recognition</h2>
-					<p className="text-lg text-gray-400 my-3">
+					<p className="text-lg text-gray-400 my-3 h-48 overflow-hidden text-clip">
 						Boost your brand recognition with each click. Generic links don't
 						mean a thing. Branded links help instil confidence in your content.
 					</p>
 				</li>
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72">
+				<li className="w-11/12 sm:w-96 sm:max-w-96 h-80 bg-white border rounded-md shadow-md flex flex-col items-center px-5 pb-5">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
-						<img src={DetailedRecords} alt="Detailed Records" />
+						<img src={DetailedRecords} alt="Brand recognition" />
 					</div>
 					<h2 className="font-bold text-2xl">Detailed Records</h2>
-					<p className="text-lg text-gray-400 my-3">
+					<p className="text-lg text-gray-400 my-3 h-48 overflow-hidden text-clip">
 						Gain insights into who is clicking your links. Knowing when and
 						where people engage with your content helps inform better decisions.
 					</p>
 				</li>
-				<li className="bg-white rounded-md shadow-md flex flex-col items-center px-5 pb-5 min-h-60 sm:h-72 sm:translate-y-10">
+				<li className="w-11/12 sm:w-96 sm:max-w-96 h-80 bg-white border rounded-md shadow-md flex flex-col items-center px-5 pb-5 lg:translate-y-10">
 					<div className="-translate-y-1/2 w-fit rounded-full bg-darkViolet p-5">
-						<img src={FullyCustomizable} alt="Fully Customizable" />
+						<img src={FullyCustomizable} alt="Brand recognition" />
 					</div>
 					<h2 className="font-bold text-2xl">Fully Customizable</h2>
-					<p className="text-lg text-gray-400 my-3">
+					<p className="text-lg text-gray-400 my-3 h-48 overflow-hidden text-clip">
 						Improve brand awareness and content discoverability through
 						customizable links, supercharging audience engagement.
 					</p>

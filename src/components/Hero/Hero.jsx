@@ -3,13 +3,13 @@ import Working from '../../assets/illustration-working.svg';
 
 function Hero() {
 	return (
-		<section className="w-screen min-w-fit min-h-fit py-[10%] sm:py-10 sm:pl-[10%] flex flex-col sm:flex-row-reverse items-center">
+		<section className="w-screen min-w-fit min-h-fit flex flex-col sm:flex-row-reverse items-center px-[10%] py-10">
 			<img
 				src={Working}
 				alt="Illustration of a working person"
-				className="translate-x-10"
+				className="translate-x-10 w-full h-auto"
 			/>
-			<div className="flex flex-col justify-evenly text-center sm:items-start sm:text-left sm:h-fit p-[5%] sm:p-0 mb-20">
+			<div className="flex flex-col justify-evenly text-center sm:items-start sm:text-left sm:h-fit mb-20">
 				<h1 className="text-4xl sm:text-5xl font-bold mt-10">
 					More than just shorter links
 				</h1>
