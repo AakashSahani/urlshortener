@@ -7,9 +7,9 @@ function Hero() {
 			<img
 				src={Working}
 				alt="Illustration of a working person"
-				className="translate-x-10 w-full h-auto"
+				className="translate-x-10 w-full h-auto flex-1"
 			/>
-			<div className="flex flex-col justify-evenly text-center sm:items-start sm:text-left sm:h-fit mb-20">
+			<div className="flex flex-1 flex-col justify-evenly text-center sm:items-start sm:text-left sm:h-fit mb-20">
 				<h1 className="text-4xl sm:text-5xl font-bold mt-10">
 					More than just shorter links
 				</h1>
