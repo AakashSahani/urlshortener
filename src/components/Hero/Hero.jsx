@@ -17,7 +17,7 @@ function Hero() {
 					Build your brand's recognition and get detailed insights on how your
 					links are performing.
 				</p>
-				<button className="bg-mainCyan rounded-full min-w-fit w-1/2 h-12 text-white font-bold text-lg mx-auto sm:mx-0">
+				<button className="bg-mainCyan hover:opacity-50 rounded-full min-w-fit w-1/2 h-12 text-white font-bold text-lg mx-auto sm:mx-0">
 					Get Started
 				</button>
 			</div>

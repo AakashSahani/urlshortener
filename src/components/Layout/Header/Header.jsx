@@ -17,13 +17,19 @@ function Header() {
 				<div className="hidden sm:flex justify-between items-center font-bold text-gray-400">
 					<ul className="flex items-center justify-evenly space-x-5">
 						<li>
-							<a href="#">Features</a>
+							<a href="#" className="hover:text-black">
+								Features
+							</a>
 						</li>
 						<li>
-							<a href="#">Pricing</a>
+							<a href="#" className="hover:text-black">
+								Pricing
+							</a>
 						</li>
 						<li>
-							<a href="#">Resources</a>
+							<a href="#" className="hover:text-black">
+								Resources
+							</a>
 						</li>
 					</ul>
 					<ul className="flex items-center justify-between space-x-5">
@@ -31,7 +37,7 @@ function Header() {
 							<a href="#">Login</a>
 						</li>
 						<li className="">
-							<button className="bg-mainCyan rounded-full w-full h-10 px-5 text-white text-lg">
+							<button className="bg-mainCyan hover:opacity-50 rounded-full w-full h-10 px-5 text-white text-lg">
 								Sign Up
 							</button>
 						</li>
