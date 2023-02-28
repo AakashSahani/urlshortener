@@ -32,7 +32,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop ScreenShot](./screenshots/Desktop_Screenshot.png)
-![Mobile ScreenShot](./screenshots/Mobile_Screenshot.png)
+![Mobile ScreenShot](./screenshots/Mobile_Screenshot.jpeg)
 
 ### Links
 
