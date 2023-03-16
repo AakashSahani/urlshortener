@@ -33,17 +33,17 @@ function UrlShortener() {
 		]);
 	};
 
-	// const handleCopy = (text) => {
-	// 	copyContent(text);
-	// };
+	const handleCopy = (text) => {
+		copyContent(text);
+	};
 
-	// const copyContent = async (text) => {
-	// 	try {
-	// 		await navigator.clipboard.writeText(text);
-	// 	} catch (error) {
-	// 		console.log('Failed to Copy: ', error);
-	// 	}
-	// };
+	const copyContent = async (text) => {
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch (error) {
+			console.log('Failed to Copy: ', error);
+		}
+	};
 
 	return (
 		<main className="flex flex-col items-center w-screen min-h-fit pb-20 px-[10%]">
